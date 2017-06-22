@@ -16,12 +16,11 @@ mainWindow::mainWindow(QWidget *parent) :
 
     // initialize the database
     QSqlError dbError = initDb();
-    if (err.type() != QSqlError::NoError) {
+    if (dbError.type() != QSqlError::NoError) {
         QMessageBox::critical(this, "Error initalizing database",
                               "Error: " + dbError.text());
         return;
     }
-
 }
 
 mainWindow::~mainWindow()

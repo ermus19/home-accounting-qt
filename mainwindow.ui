@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>658</width>
-    <height>456</height>
+    <width>646</width>
+    <height>477</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -25,6 +25,35 @@
   <property name="windowTitle">
    <string>Easy home accounting!</string>
   </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="accounts">
+      <attribute name="title">
+       <string>Accounts</string>
+      </attribute>
+      <widget class="QTableView" name="accountsTable">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>611</width>
+         <height>301</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="movements">
+      <attribute name="title">
+       <string>Movements</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
