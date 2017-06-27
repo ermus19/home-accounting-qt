@@ -7,7 +7,8 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationName("home-accounting-qt");
 
     mainWindow mainWin;
-    mainWin.setMinimumSize(800, 600);
+    mainWin.setMinimumSize(650, 350);
+    mainWin.setMaximumSize(900, 700);
     mainWin.show();
 
     return a.exec();
