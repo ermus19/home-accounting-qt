@@ -15,11 +15,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    accountform.cpp \
+    account.cpp
 
 HEADERS += \
         mainwindow.h \
-    dbconnection.h
+    dbconnection.h \
+    accountform.h \
+    account.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    accountform.ui
