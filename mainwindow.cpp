@@ -54,8 +54,15 @@ bool mainWindow::addAccount(string accountName, account *newAccount)
 {
     try
     {
-        this->accounts.insert(std::make_pair(accountName, newAccount));
-        return true;
+        //If the account name is not taken, add account to collection
+        if(this->accounts.count(accountName) > 0)
+            return false;
+        else
+        {
+            this->accounts.insert(std::make_pair(accountName, newAccount));
+            return true;
+        }
+
     }
     catch (...)
     {

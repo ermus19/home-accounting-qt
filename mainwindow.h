@@ -17,11 +17,11 @@ class mainWindow : public QWidget
 
 public:
     explicit mainWindow(QWidget *parent = 0);
+    bool addAccount(string accountName, account *newAccount);
     ~mainWindow();
 
 private slots:
     void on_addAccountButton_clicked();
-    bool addAccount(string accountName, account *newAccount);
 
 private:
     Ui::mainWindow *ui;
